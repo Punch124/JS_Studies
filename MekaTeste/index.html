@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciador de tarefa</title>
+    <link rel="stylesheet" href="/MekaTeste/styles/style.css" />
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <p>Bem vindo ao Gerenciador de tarefas:</p>
+
+    <table id="tabela">
+      <tr id="tr1">
+        <td><strong>Tarefas</strong></td>
+        <td><strong>prioridade</strong></td>
+        <td><strong>data</strong></td>
+        <td><strong>concluido?</strong></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="nome"></td>
+        <td>
+          <select name="select" id="prioridade">
+            <option value="baixa">Baixa</option>
+            <option value="média" selected>Média</option>
+            <option value="alta">Alta</option>
+          </select>
+        </td>
+        <td><input type="datetime-local" id="data"/></td>
+        <td><input type="checkbox" id="check"/></td>
+      </tr>
+    </table>
+    <button id="botãoAdicionar" onclick="adicionar()">+</button>
+    <script src="/MekaTeste/script/script.js"></script>
+  </body>
+</html>
